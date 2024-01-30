@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/23c50b0bb8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="budget-section">
+        <h2>Budget</h2>
+        <input
+          type="number"
+          class="budget input"
+          placeholder="Enter Total Amount"
+        />
+        <button class="set-btn sub-btn">Set Budget</button>
+      </div>
+
+      <div class="expenses-section">
+        <h2>Expenses</h2>
+        <input
+          type="text"
+          placeholder="Enter title of product"
+          class="expense-type input"
+        />
+        <input
+          type="number"
+          placeholder="Enter cost of product"
+          class="expense input"
+        />
+        <button class="check-btn sub-btn">Check Amount</button>
+      </div>
+
+      <div class="calculations-bar">
+        <div class="bar-col">
+          <div class="bar-title">Total Budget</div>
+          <div class="budget-amount">0</div>
+        </div>
+        <div class="bar-col">
+          <div class="bar-title">Expenses</div>
+          <div class="expense-amount">0</div>
+        </div>
+        <div class="bar-col">
+          <div class="bar-title">Balance</div>
+          <div class="balance-amount">0</div>
+        </div>
+      </div>
+
+      <div class="list-section">
+        <h2>Expenses List</h2>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
